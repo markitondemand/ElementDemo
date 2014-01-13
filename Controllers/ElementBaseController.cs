@@ -7,14 +7,18 @@ using System.Web.Mvc;
 
 namespace ElementDemo.Controllers
 {
-	public class ElementBaseController : Controller
+	public abstract class ElementBaseController : Controller
 	{
 		public const string HTML_DOCTYPE = @"<!DOCTYPE html>";
-
-		public ActionResult Content(IRenderable m)
+		/// <summary>
+		/// Will render an IRenderable object which should represent the html node of a web page
+		/// </summary>
+		/// <param name="htmlElement">The html node of a web page</param>
+		/// <returns>The content result including the doctype</returns>
+		public ActionResult Content(IRenderable htmlElement)
 		{
 			Response.Write(HTML_DOCTYPE);
-			return Content(m.Render().ToString());
+			return Content(htmlElement.Render().ToString());
 		}
 	}
 }
