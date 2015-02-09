@@ -1,7 +1,5 @@
 ﻿using ElementDemo.Views.Modules;
 using MOD.Web.Element;
-using MOD.Web.Element.Module;
-using MOD.Web.Element.Modules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +9,11 @@ namespace ElementDemo.Views.Pages
 {
 	public class ElementHomePage : Page
 	{
-		public override MOD.Web.Element.Node Render()
+		public override MOD.Web.Element.INode Render()
 		{
 			return Container.Add(
-				new PageHeaderModule(),
-				new ExampleModule(),
+				new PageHeaderModule().Render(),
+				new ExampleModule().Render(),
 				RenderFooter()
 			);
 		}

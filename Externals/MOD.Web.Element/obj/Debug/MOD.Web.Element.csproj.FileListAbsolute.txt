@@ -1,5 +1,9 @@
-C:\Projects\ElementDemo\ElementDemo\Externals\MOD.Web.Element\bin\Debug\MOD.Web.Element.dll
-C:\Projects\ElementDemo\ElementDemo\Externals\MOD.Web.Element\bin\Debug\MOD.Web.Element.pdb
-C:\Projects\ElementDemo\ElementDemo\Externals\MOD.Web.Element\obj\Debug\MOD.Web.Element.csprojResolveAssemblyReference.cache
-C:\Projects\ElementDemo\ElementDemo\Externals\MOD.Web.Element\obj\Debug\MOD.Web.Element.dll
-C:\Projects\ElementDemo\ElementDemo\Externals\MOD.Web.Element\obj\Debug\MOD.Web.Element.pdb
+D:\Projects\Playground\Element\bin\Debug\MOD.Web.Element.dll
+D:\Projects\Playground\Element\bin\Debug\MOD.Web.Element.pdb
+D:\Projects\Playground\Element\obj\Debug\MOD.Web.Element.dll
+D:\Projects\Playground\Element\obj\Debug\MOD.Web.Element.pdb
+D:\Projects\Playground\ElementDemo\Externals\MOD.Web.Element\bin\Debug\MOD.Web.Element.dll
+D:\Projects\Playground\ElementDemo\Externals\MOD.Web.Element\bin\Debug\MOD.Web.Element.pdb
+D:\Projects\Playground\ElementDemo\Externals\MOD.Web.Element\obj\Debug\MOD.Web.Element.csprojResolveAssemblyReference.cache
+D:\Projects\Playground\ElementDemo\Externals\MOD.Web.Element\obj\Debug\MOD.Web.Element.dll
+D:\Projects\Playground\ElementDemo\Externals\MOD.Web.Element\obj\Debug\MOD.Web.Element.pdb

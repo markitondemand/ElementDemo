@@ -1,5 +1,5 @@
-﻿using MOD.Web.Element;
-using MOD.Web.Element.Module;
+﻿using ElementDemo.Views.Shared;
+using MOD.Web.Element;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,18 +9,19 @@ namespace ElementDemo.Views.Modules
 {
 	public class ExampleModule : ViewModule
 	{
-		public override MOD.Web.Element.Node Render()
+		public override MOD.Web.Element.INode Render()
 		{
 			return Container.Add(
 				Element.Create("h2").Add("Welcome to ASP.NET MVC with Element!"),
 				RenderInfo()
 			).SetAttribute("id", "main");
 		}
-		protected Element RenderInfo()
+		protected IElement RenderInfo()
 		{
 			return Element.Create("p").Add(
-				"To learn more about ASP.NET MVC visit ",
-				Element.Create("a", "href", "http://asp.net/mvc").Add("http://asp.net/mvc")
+				Element.Text("To learn more about ASP.NET MVC visit "),
+				Element.Create("a", "href", "http://asp.net/mvc").Add("http://asp.net/mvc"),
+				new ElementDemo.Views.Modules.AnotherExampleModule().Render()
 			);
 		}
 

@@ -1,4 +1,5 @@
-﻿using MOD.Web.Element;
+﻿using ElementDemo.Views.Shared;
+using MOD.Web.Element;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,11 @@ namespace ElementDemo.Controllers
 		/// <returns>The content result including the doctype</returns>
 		public ActionResult Content(IRenderable htmlElement)
 		{
-			Response.Write(HTML_DOCTYPE);
-			return Content(htmlElement.Render().ToString());
+			var page = Element.Fragment().Add(
+				Element.Html(HTML_DOCTYPE)
+				,htmlElement.Render()
+			);
+			return new ElementActionResult(page);
 		}
 	}
 }

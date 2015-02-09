@@ -1,5 +1,5 @@
-﻿using MOD.Web.Element;
-using MOD.Web.Element.Modules;
+﻿using ElementDemo.Views.Shared;
+using MOD.Web.Element;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +9,12 @@ namespace ElementDemo.Views
 {
 	public class DefaultDocument : HtmlDocument
 	{
-		public override MOD.Web.Element.Node Render()
+		public override MOD.Web.Element.INode Render()
 		{
-			Body.Add(PageView);
+			Body.Add(PageView.Render());
 
 			Head.Add(
-				Element.Create("link", "rel", "stylesheet", "type", "text/css", "href", "~/Content/Site.css")
+				Element.Create("link", "rel", "stylesheet", "type", "text/css", "href", "~/Content/Site.css".ResolvePath())
 			);
 
 			Head.Add(
